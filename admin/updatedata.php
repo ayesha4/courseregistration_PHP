@@ -1,5 +1,5 @@
 <?php
-include 'D:\X\htdocs\courseregistration\config.php';
+include '../config.php';
 include 'header.php';
 $id = $_POST['Id'];
 $name = $_POST['Name'];

@@ -21,8 +21,8 @@ $result = mysqli_query($conn,$sql) or die("qery unsucess");
 
 ?>
 
-<div class="container" style="width:50rem;">
-<form method="POST" action= "<?php $_SERVER['PHP_SELF']; ?>">
+<div class="container" >
+<form method="POST"  action= "<?php $_SERVER['PHP_SELF']; ?>">
 
   <div class="container mt-3">
 <div class="mb-1">

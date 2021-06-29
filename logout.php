@@ -9,6 +9,6 @@ session_unset();
 
 session_destroy();
 
-header("Location: {$hostname}/login.php");
+header("Location: {$hostname}/index.php");
 
 ?>

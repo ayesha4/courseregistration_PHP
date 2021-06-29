@@ -1,5 +1,5 @@
 <?php 
- include 'D:\X\htdocs\courseregistration\config.php';
+ include '../config.php';
 
 $id = $_GET['RegisterID'];
 $sql = "DELETE FROM registration WHERE RegisterID = {$id}" or die ("check query");

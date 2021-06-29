@@ -1,0 +1,96 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+ 
+
+}
+/* .log{
+    border:1px solid #4f525570;
+    border-radius: 8px;
+     margin-top: 26px; 
+    box-shadow:0rem 1rem 1rem 0rem #929eaa ;
+} */
+
+#formhead{
+color: rgb(29, 27, 27);
+font-size: larger;
+font-weight: 600;
+margin-bottom: 1rem;
+
+}
+
+    .fit-image{
+        width: 100%;
+        object-fit: cover;
+        height:100%;
+        background-size: cover;
+        position:center;
+         /* only if you want fixed height */
+        }
+        /* html,body{
+            height: 100%;
+            margin:0;
+        } */
+ .box{
+
+ height: 100vh; 
+display:flex
+} 
+.left , .right {
+
+   
+    flex-direction: column;
+}
+.left{
+   
+    flex-basis: 40%;
+    /* background-image: url(/images/nathan-dumlao-ewGMqs2tmJI-unsplash.jpg); */
+     background-size: contain;
+}
+.left img{
+    background-position: center;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+.right {
+       
+    flex-basis: 60%;
+}
+
+/* .sha{
+    border:1px;
+    box-shadow: inset 9px 3px 24px 2px #abb8b2;
+} */
+.posts:hover{
+    transform: translate3d(0px, -15px, 0px);
+    box-shadow:0rem 2rem 4rem 0rem #929eaa ;
+    /* box-shadow: 20px 20px 50px #00d2c6, 
+            -30px -30px 60px #00ffff; */
+}
+.neo{
+
+    background-color: #ecf0f3;
+
+}
+.inset{
+    box-shadow:0rem 0.1rem 0.2rem 0rem #929eaa inset; 
+}
+.log:hover{
+    box-shadow:0rem 0.1rem 0.2rem 0rem #929eaa ;
+
+}
+.bt{
+    box-shadow:0.08rem 0.1rem 0.1rem 0.08rem #929eaa ;
+}
+.hv:hover{
+  max-width: 4rem;
+     box-shadow:1rem 2rem 2rem 0rem #6e6e6e ; 
+    transition:all 0.25s ease ;
+}
+.subtext {
+    font-size: 1em;
+    
+   color: #6e6e6e;
+}

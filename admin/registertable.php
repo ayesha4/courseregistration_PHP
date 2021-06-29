@@ -1,15 +1,18 @@
 <?php 
 include '../config.php';
 include '../header.php';
+
 $sql = "SELECT r.registerID,u.userID,u.Name AS username,c.Name AS coursename FROM registration r 
                 INNER JOIN usertable u
                 ON r.userid = u.UserID
                 INNER JOIN courses c
-                ON r.courseid = c.ID";
+                ON r.courseid = c.ID 
+                WHERE Status='';";
 $result = mysqli_query($conn,$sql) or die("qery unsucess");
 
 ?>
-<div class="container mt-4 ">
+<link rel="stylesheet" href="css/style.css">
+<div class="bg container mt-4">
 <table class="table table-bordered table-hover  table-responsive">
   <thead>
     <tr>
@@ -31,8 +34,8 @@ $result = mysqli_query($conn,$sql) or die("qery unsucess");
       <td><?php echo $row['coursename'];?></td>
       <td> 
       
-      <a class="edit btn  btn-outline-success btn-sm" name="confirm" role="button" href="decline.php?RegisterID=<?php echo $row['registerID'];?>">Decline</a>
-      <a class="delete btn btn-outline-danger  btn-sm" role="button" href="confirm.php?RegisterID=<?php echo $row['registerID'];?>">Confirm</a>
+      <a class="edit btn  btn-outline-danger btn-sm" name="confirm" role="button" href="decline.php?RegisterID=<?php echo $row['registerID'];?>">Reject</a>
+      <a class="delete btn btn-outline-success  btn-sm" role="button" href="confirm.php?RegisterID=<?php echo $row['registerID'];?>">Admit</a>
       
       </td>
       <?php } }  ?>

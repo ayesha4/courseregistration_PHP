@@ -19,7 +19,7 @@ if (isset($_POST['update'])){
 <div id="main-content">
    
     <?php 
-    include 'D:\X\htdocs\courseregistration\config.php';
+    include '../config.php';
     //from url GET  is super global variable 
     //we get id from change smade in url of chANGE ID
     $id = $_GET['ID'];

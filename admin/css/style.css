@@ -1,0 +1,17 @@
+.footer {
+    min-height: 50px;
+    background-color: #eaecee70;
+    color: #929eaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+
+}
+.posts:hover{
+    transform: translate3d(0px, -15px, 0px);
+    box-shadow:0rem 2rem 4rem 0rem #929eaa ;
+    /* box-shadow: 20px 20px 50px #00d2c6, 
+            -30px -30px 60px #00ffff; */
+}

@@ -3,12 +3,11 @@
 //session_start();
 // echo $_SESSION['user_role'];
 
-include 'header.php';
-include 'D:\X\htdocs\courseregistration\config.php';
+include '../header.php';
+include '../config.php';
 
-$sql = "SELECT * FROM courses ";
+$sql = "SELECT * FROM courses";
 $result = mysqli_query($conn,$sql) or die("qery unsucess");
-
 
 ?>
 <div class="container mt-4">
@@ -16,12 +15,12 @@ $result = mysqli_query($conn,$sql) or die("qery unsucess");
 <?php if(mysqli_num_rows($result)>0){
     while ($row = mysqli_fetch_assoc($result)){ ?>
 <div class="col-auto">
-<div class="card" style="width:14rem;height:15rem">
+<div class=" posts card" style="width:14rem;height:15rem">
   
-  <div class="card-body">
+  <div class=" card-body">
     <h5 class="card-title"><?php echo $row['Name'];?></h5>
-    <p class="card-text"><b>StartDate:</b><?php echo $row['Startdate']; ?></p>
-    <p class="card-text"><?php echo $row['About']; ?></p>
+    <p class="card-text subtext">StartDate  :  <?php echo $row['Startdate']; ?></p>
+    <p class="card-text subtext"><?php echo $row['About']; ?></p>
     <!-- <input class="btn btn-primary" type="submit"  value="Save"> -->
     <?php 
     $sql1 = "SELECT * FROM registration WHERE userid = {$_SESSION['user_id']} AND courseid= {$row['ID']}";

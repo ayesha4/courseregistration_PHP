@@ -37,7 +37,7 @@ echo $row2['enrolled'];
 <?php if(mysqli_num_rows($result3)>0){
     while ($row3 = mysqli_fetch_assoc($result3)){ ?>
 <table class="table table-bordered mb-3" style="width:40rem">
-<h6>COURSE NAME : <?php echo $row3['coursename'];?><br> Start Date :<?php echo $row3['Startdate'];?></h6>
+<h6>Course Name : <?php echo $row3['coursename'];?><br> Start Date :<?php echo $row3['Startdate'];?></h6>
   <thead>
     <tr class="table-secondary" >
       <th scope="col">Register ID</th>

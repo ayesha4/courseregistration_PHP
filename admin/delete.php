@@ -1,7 +1,7 @@
 <?php 
 
 $id =$_GET['ID'];
-include 'D:\X\htdocs\courseregistration\config.php';
+include '../config.php';
 
 //run a query
 $sql = "DELETE FROM courses WHERE ID = {$id}" or die ("check query");
